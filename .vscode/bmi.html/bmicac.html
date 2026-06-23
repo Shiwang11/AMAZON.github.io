@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+Weight:<input id="w"><br>
+Height:<input id="h"><br>
+<button onclick="bmi()">Calculate</button>
+
+<h2 id="ans"></h2>
+
+<script>
+function bmi(){
+let w=document.getElementById("w").value;
+let h=document.getElementById("h").value;
+document.getElementById("ans").innerHTML=
+(w/(h*h)).toFixed(2);
+}
+</script>
+</body>
+</html>
